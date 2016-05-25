@@ -212,6 +212,47 @@ input[type="submit"] {
     width: 32%;
     overflow: hidden;
 }
+
+/***** SLIDER ****/
+.slider {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.wrapper .slide img {
+    height: 540px;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slide-side {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.slide-side img:first-child {
+    width: 100%;
+    position: absolute;
+    float: left;
+    left: -87.2%;
+    height: 540px;
+}
+.slide-side img:last-child {
+    width: 100%;
+    float: right;
+    position: absolute;
+    overflow: hidden;
+    right: -87.2%;
+    height: 540px;
+}
+.slide-mini {
+    width: 100%;
+}
+.slide-mini img {
+    width: 25%;
+    float: left;
+}
 .brown {
     background-color: #4C392A;
 }
