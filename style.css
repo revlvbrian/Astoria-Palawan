@@ -155,7 +155,7 @@ nav .language-selector > li:last-child {
 }
 .content-info {
     float: left;
-    width: 70%;
+    width: 66%;
     overflow: hidden;
 }
 .content-info p {
@@ -181,6 +181,36 @@ nav .language-selector > li:last-child {
     color: #017060;
     font-family: 'Montserrat';
     font-weight: normal;
+}
+input[type="text"] {
+    padding: 16px;
+    margin: 8px;
+    width: 97%;
+    background-color: #D2CECB;
+    border: 1px solid #B0AFAF;
+    font-size: 10pt;
+    color: #444;
+}
+input[type="text"]:first-child {
+    margin-top: 0;
+}
+input[type="submit"] {
+    padding: 16px;
+    margin: 8px;
+    width: 97%;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    background-color: #00B09F;
+    text-align: center;
+    border: none;
+    font-size: 10pt;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+.input-group {
+    float: right;
+    width: 32%;
+    overflow: hidden;
 }
 .brown {
     background-color: #4C392A;
