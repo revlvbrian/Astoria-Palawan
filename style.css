@@ -1,7 +1,6 @@
 
 body {
     font-family: 'Open Sans';
-    background-color: #E8E8E8;
 }
 h1,
 h2,
@@ -43,6 +42,7 @@ video {
     height: 100%;
     z-index: -100;
     transition: 1s opacity;
+    display: block;
 }
 .video-overlay {
     background-color: rgba(0, 0, 0, 0.5);
@@ -216,43 +216,79 @@ input[type="submit"] {
 /***** SLIDER ****/
 .slider {
     width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-.wrapper .slide img {
     height: 540px;
-    bottom: 0;
-    width: 100%;
+    overflow: hidden;
     position: relative;
-    overflow: hidden;
 }
-.slide-side {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.slide-side img:first-child {
-    width: 100%;
-    position: absolute;
-    float: left;
-    left: -87.2%;
+.slider img {
     height: 540px;
-}
-.slide-side img:last-child {
-    width: 100%;
-    float: right;
     position: absolute;
-    overflow: hidden;
-    right: -87.2%;
-    height: 540px;
+}
+.slider img:nth-child(1) {
+    left: -797px;
+}
+.slider img:nth-child(3) {
+    left: 163px;
+    width: 960px;
+}
+.slider img:nth-child(2) {
+    right: -797px;
 }
 .slide-mini {
     width: 100%;
+    background-color: #4C392A;
+    overflow: hidden;
 }
 .slide-mini img {
     width: 25%;
     float: left;
 }
+
+/***** SOCIAL FEEDS *****/
+.social-feeds {
+    background-color: #f2f2f2;
+    overflow: hidden;
+    width: 100%;
+}
+.social-feeds .wrapper {
+    background-color: #f2f2f2;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.social-feeds {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    list-style: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 10.5pt;
+    width: 100%;
+    padding: 0;
+}
+.social-feeds ul {
+    padding: 0;
+    display: block;
+}
+.social-feeds ul li {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 15px;
+    width: 16.3%;
+    text-align: center;
+    margin: 0;
+}
+.social-feeds ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.social-feeds ul li a:nth-child(1) {
+    background-color: #4C4C4C;
+}
+.social-feeds ul li a:nth-child(2) {
+    background-color: #4C4C4C;
+}
 .brown {
     background-color: #4C392A;
 }
+
