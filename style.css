@@ -27,11 +27,25 @@ body {
  * Header
  */
 header {
-    padding: 30px 0;
+    padding: 0;
+    position: absolute;
     width: 100%;
     z-index: 1;
-    background-color: #E8E8E8;
     border: 1px solid black;
+    overflow: hidden;
+    top: 10px;
+}
+
+video {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    transition: 1s opacity;
 }
 
 /**
@@ -40,11 +54,16 @@ header {
 nav {
     border: 1px solid black;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 15px;
     list-style: none;
     text-transform: uppercase;
     text-align: right;
+    color: #fff;
+    font-size: 10pt;
+}
+nav ul {
+    padding-top: 20px;
 }
 nav ul li {
     display: inline-block;
@@ -52,16 +71,31 @@ nav ul li {
     margin-left: 15px;
 }
 nav ul li a.active {
-    color: #81B722;
+    color: #00B09F;
 }
-nav ul li span {
-    vertical-align: top;
-    text-transform:none;
-    display: inline-block;
-    text-transform: uppercase;
+nav ul li a span {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #00B09F;
 }
 nav ul li a {
     display: block;
-    color: #4A4A4A;
+    color: #fff;
     text-decoration: none;
+}
+nav ul:first-child {
+    margin-top: 0;
+    font-size: 9pt;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+nav .language-selector > li {
+    margin: 0;
+    padding: 0;
+    padding-right: 6px;
+}
+nav .language-selector > li:first-child {
+    border-right: 1px solid #fff;
+    border-height: 1px;
 }
