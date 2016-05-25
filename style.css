@@ -2,7 +2,15 @@ body {
     font-family: 'Open Sans';
     background-color: #E8E8E8;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-family: 'Montserrat';
+}
 /**
  * Helper classes
  */
@@ -33,7 +41,7 @@ header {
     z-index: 1;
     border: 1px solid black;
     overflow: hidden;
-    top: 10px;
+    top: 30px;
 }
 
 video {
@@ -69,12 +77,15 @@ nav ul li {
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px;
+    padding-left: 4px;
 }
 nav ul li a.active {
     color: #00B09F;
 }
 nav ul li a span {
-    padding: 15px;
+    padding: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border-radius: 30px;
     background-color: #00B09F;
 }
@@ -97,5 +108,32 @@ nav .language-selector > li {
 }
 nav .language-selector > li:first-child {
     border-right: 1px solid #fff;
-    border-height: 1px;
+}
+nav .language-selector > li:last-child {
+    padding-left: 2px;
+    padding-right: 15px;
+    color: #ccc;
+}
+
+/***** PANEL *****/
+.panel {
+    width: 100%;
+    border: 1px solid black;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0;
+    vertical-align: top;
+}
+.panel h1 {
+    font-weight: bold;
+    font-size: 43pt;
+    text-transform: uppercase;
+    color: #fff;
+}
+.panel h5 {
+    font-weight: bold;
+    font-size: 20pt;
+    color: #00B09F;
 }
