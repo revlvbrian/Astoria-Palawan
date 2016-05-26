@@ -415,6 +415,56 @@ input[type="submit"] {
     color: #888;
     font-weight: bold;
 }
+.footer-nav {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+footer {
+    width: 100%;
+}
+footer .wrapper img {
+    padding: 30px 80px 20px 80px;
+    margin-left: 290px;
+    margin-right: 290px;
+}
+footer nav {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin-top: 0;
+    list-style: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 8pt;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+footer nav ul:first-child {
+    font-size: 8.5pt;
+}
+footer nav ul {
+    padding-top: 20px;
+}
+footer nav ul li {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 8px;
+    margin-top: 0;
+    padding-left: 2px;
+    letter-spacing: 2px;
+}
+footer nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+footer nav p {
+    margin-top: 50px;
+    font-size: 10.5pt;
+    color: #888;
+    font-weight: normal;
+    text-transform: none;
+}
 .brown {
     background-color: #4C392A;
 }
