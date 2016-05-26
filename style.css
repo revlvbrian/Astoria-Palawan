@@ -272,6 +272,7 @@ input[type="submit"] {
     font-size: 10.5pt;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 100px;
 }
 .social-feeds ul {
     padding: 0;
@@ -373,6 +374,46 @@ input[type="submit"] {
 }
 .microsoft-container p:last-child {
     color: #00B09F;
+}
+
+/* MAP */
+.google-map {
+    width: 100%;
+    position: relative;
+}
+#googleMap {
+    height: 500px;
+}
+.wrapper .map-description {
+    top: 0;
+    padding: 50px 50px 50px 0;
+    position: absolute;
+    width: 30%;
+    margin-top: 20px;
+}
+.wrapper .map-description h2, h3 {
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+.wrapper .map-description h2 {
+    color: #00AE9D;
+    font-size: 22pt;
+    line-height: 30px;
+    margin: 0;
+}
+.wrapper .map-description h3 {
+    color: #65D3C9;
+    font-size: 12pt;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.wrapper .map-description p {
+    line-height: 23px;
+    margin-top: 25px;
+    font-size: 10.5pt;
+    color: #888;
+    font-weight: bold;
 }
 .brown {
     background-color: #4C392A;

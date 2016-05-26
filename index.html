@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+          var mapProp = {
+            center:new google.maps.LatLng(9.984422,118.967217),
+            zoom:14,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -139,6 +151,20 @@
                     <p>#Excel #Financial #Functions #Test</p>
                     <p>Read More</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="google-map">
+        <div id="googleMap"></div>
+        <div class="wrapper">
+            <div class="map-description">
+                <h3>Get in touch and</h3>
+                <h2>Stay Connected</h2>
+                <p>rsvn@astoriapalawan.com</br>
+                02.687.1111 local 8024 / 8302 /8110</br>
+                Km 32 North National Highway Brgy San Rafael</br>
+                Puerto Princesa City, Palawan, 5300</br>
+                </p>
             </div>
         </div>
     </div>
