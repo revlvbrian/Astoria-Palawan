@@ -11,6 +11,11 @@ h6,
 {
     font-family: 'Montserrat';
 }
+hr {
+    height: 2px;
+    background-color: #00B09F;
+    border-color: #00B09F;
+}
 /**
  * Helper classes
  */
@@ -29,6 +34,9 @@ h6,
 }
 .text-uppercase {
     text-transform: uppercase;
+}
+.img-circle {
+  border-radius: 50%;
 }
 
 /**
@@ -130,20 +138,28 @@ nav .language-selector > li:last-child {
     text-transform: uppercase;
     color: #fff;
     font-family: 'Montserrat';
+    margin-bottom: 20px;
 }
 .panel h5 {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20pt;
     color: #00B09F;
+    margin-top: 20px;
+    font-family: 'Montserrat';
 }
 .panel .arrow {
-    padding: 20px;
+    padding: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 5px;
+    margin: 0 auto;
+    text-align: center;
     border-radius: 70px;
     background-color: #00B09F;
-    margin: 0 auto;
-    width: 2px;
-    margin-top: 250px;
+    margin-top: 280px;
     font-family: 'Montserrat';
+    color: #fff;
+    font-weight: normal;
 }
 
 /***** CONTENT *****/
@@ -185,18 +201,21 @@ nav .language-selector > li:last-child {
 input[type="text"] {
     padding: 16px;
     margin: 8px;
-    width: 97%;
+    margin-bottom: 10px;
+    width: 86%;
     background-color: #D2CECB;
     border: 1px solid #B0AFAF;
     font-size: 10pt;
     color: #444;
+    font-family: 'Open Sans';
 }
 input[type="text"]:first-child {
-    margin-top: 0;
+    margin-top: 5px;
 }
 input[type="submit"] {
     padding: 16px;
     margin: 8px;
+    margin-top: 5px;
     width: 97%;
     font-weight: bold;
     font-family: 'Open Sans';
@@ -206,6 +225,16 @@ input[type="submit"] {
     font-size: 10pt;
     letter-spacing: 1.5px;
     color: #fff;
+}
+.input-icon {
+    position: relative;
+}
+.input-icon i{
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+    color: #888;
 }
 .input-group {
     float: right;
@@ -255,6 +284,8 @@ input[type="submit"] {
 }
 .social-feeds h2 {
     color: #00AE9D;
+    font-size: 22pt;
+    text-transform: none;
 }
 .social-feeds h3 {
     color: #65D3C9;
@@ -321,24 +352,39 @@ input[type="submit"] {
     margin: 20px 0 0 0;
     overflow: hidden;
 }
-
+.social-container img {
+    float: left;
+    height: 50px;
+}
+.social-container i {
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: -2px;
+    color: #555;
+}
 .social-container h3 {
     font-weight: bold;
-    font-size: 12pt;
-    color: #000;
+    font-size: 10pt;
+    color: #555;
+    margin-left: 90px;
+    margin-top: -20px;
 }
 .social-container p {
     font-weight: normal;
     font-size: 10pt;
     color: #888;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 2px;
 }
-.social-container p:first-child {
+.social-container .time {
     float: right;
-    overflow: hidden;
-    margin: 0;
+    top: 0;
+    margin-top: 0;
 }
 .social-container p:last-child {
     color: #00B09F;
+    margin-top: 0;
 }
 .social-container p span {
     color: #00B09F;
@@ -356,26 +402,38 @@ input[type="submit"] {
     font-weight: normal;
     font-size: 12pt;
     line-height: 16pt;
+    position: relative;
 }
 .microsoft-container h3 {
     font-weight: bold;
-    font-size: 12pt;
-    color: #000;
+    font-size: 10pt;
+    color: #555;
+    margin-left: 90px;
 }
 .microsoft-container p {
     font-weight: normal;
     font-size: 10pt;
     color: #888;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 2px;
 }
-.microsoft-container p:first-child {
+.microsoft-container p span {
+    color: #00B09F;
+}
+.microsoft-container .time {
     float: right;
-    overflow: hidden;
-    margin: 0;
+    top: 0;
+    margin-top: 0;
 }
 .microsoft-container p:last-child {
     color: #00B09F;
+    margin-top: 0;
 }
-
+.microsoft-container img {
+    float: left;
+    height: 50px;
+}
 /* MAP */
 .google-map {
     width: 100%;
@@ -459,11 +517,30 @@ footer nav ul li a {
     text-decoration: none;
 }
 footer nav p {
-    margin-top: 50px;
+    margin-top: 10px;
     font-size: 10.5pt;
     color: #888;
     font-weight: normal;
     text-transform: none;
+}
+.icon-circle {
+    border-radius: 70px;
+    border: 2px solid  #888;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #888;
+    margin: 2px;
+    margin-top: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.icon-circle i {
+    margin-top: 11px;
+}
+.fa {
+    vertical-align: middle;
+    font-weight: bold;
 }
 .brown {
     background-color: #4C392A;

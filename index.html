@@ -5,9 +5,10 @@
     <title>Astoria Palawan</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
         function initialize() {
@@ -52,9 +53,10 @@
     </header>
     <div class="panel">
         <h1>Visit & Explore</h1>
+        <hr width="3.5%">
         <h5>Astoria Palawan</h5>
         <div class="arrow">
-
+            <i class="fa fa-long-arrow-down"></i>
         </div>
     </div>
     <div class="main-content brown">
@@ -66,9 +68,18 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed magna ac velit convallis viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In varius sit amet est in venenatis.</p>
             </div>
             <div class="input-group">
-                <input type="text" class="input-text" placeholder="Check-in Date">
-                <input type="text" class="input-text" placeholder="Check-out Date">
-                <input type="text" class="input-text" placeholder="Promo Code">
+                <div class="input-icon">
+                    <input type="text" class="input-text" placeholder="Check-in Date">
+                    <i class="fa fa-calendar-check-o"></i>
+                </div>
+                <div class="input-icon">
+                    <input type="text" class="input-text" placeholder="Check-out Date">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <div class="input-icon">
+                    <input type="text" class="input-text" placeholder="Promo Code">
+                    <i class="fa fa-tag"></i>
+                </div>
                 <input type="submit" class="input-submit text-uppercase" value="book now">
             </div>
         </div>
@@ -91,64 +102,72 @@
                 <h2>Social Feeds</h2>
             </div>
             <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Gplus</a></li>
-                <li><a href="#">Instagram</a></li>
+                <li><a href="#" class="fa fa-refresh"> All</a></li>
+                <li><a href="#" class="fa fa-facebook"> Facebook</a></li>
+                <li><a href="#" class="fa fa-twitter"> Twitter</a></li>
+                <li><a href="#" class="fa fa-google-plus"> Gplus</a></li>
+                <li><a href="#" class="fa fa-instagram"> Instagram</a></li>
             </ul>
             <div class="social-content">
                 <div class="social-container">
-                    <p>a minute ago</p>
-                    <h3>Smash Galaxy</h3>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">a minute ago</p>
+                    <i class="fa fa-instagram"></i><h3> Smash Galaxy</h3>
                     <p>Tomorrows gonna be lit</p>
                     <p>Read More</p>
                 </div>
                 <div class="social-container">
-                    <p>a minute ago</p>
-                    <h3>Ncansah Rexford</h3>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">a minute ago</p>
+                    <i class="fa fa-google-plus"></i><h3> Ncansah Rexford</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet accusamus nisi velit error esse eligendi. Corrupti quia illo at perspiciatis aliquid officia ullam.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <p>cc +<span>Sandra...<span></p>
                     <p>Read More</p>
                 </div>
                 <div class="social-container">
-                    <p>a minute ago</p>
-                    <h3>Memes</h3>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">a minute ago</p>
+                    <i class="fa fa-instagram"></i><h3> Memes</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deserunt, laboriosam voluptatibus, ducimus excepturi vitae officiis voluptates ipsum reprehenderit accusantium accusamus quos sequi iusto labore! Incidunt eaque, maxime atque dolore.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, corporis, nulla hic repellendus.</p>
                     <p>Read More</p>
                 </div>
                 <div class="social-container">
-                    <p>a minute ago</p>
-                    <h3>Jaci Mun</h3>
-                    <p>#Excel #Financial #Functions #Test</p>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">a minute ago</p>
+                    <i class="fa fa-google-plus"></i><h3> Jaci Mun</h3>
+                    <p><span>#Excel #Financial #Functions #Test</span></p>
                     <p>Read More</p>
                 </div>
             </div>
             <div class="microsoft-content">
                 <div class="microsoft-container">
-                    <p>4 minutes ago</p>
-                    <h3>Jaci Mun</h3>
-                    <p>#Excel #Financial #Functions #Test</p>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">4 minutes ago</p>
+                    <h3>Microsoft</h3>
+                    <p>Join @SatyaNadella as he chronicles his travels across Asia on our Instagram channel. <span>https://t.co/qSUpTk1V7z https://t.co/8fi4Ovtulh</span></p>
                     <p>Read More</p>
                 </div>
                 <div class="microsoft-container">
-                    <p>8 hours ago</p>
-                    <h3>Jaci Mun</h3>
-                    <p>#Excel #Financial #Functions #Test</p>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">8 hours ago</p>
+                    <h3>Microsoft</h3>
+                    <p>From his shipping container in rural Kenya, Benson Maina of Mawingu Networks is providing affordable Internet by tap ping the broadcast power of unused television channels</p>
                     <p>Read More</p>
                 </div>
                 <div class="microsoft-container">
-                    <p>8 hours ago</p>
-                    <h3>Jaci Mun</h3>
-                    <p>#Excel #Financial #Functions #Test</p>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">8 hours ago</p>
+                    <h3>Microsoft</h3>
+                    <p>Watch how this organization is tapping unused TV channels to bring affordable Internet to rural Kenya. <span>https://t.co/FIZOsaKfQT</span></p>
                     <p>Read More</p>
                 </div>
                 <div class="microsoft-container">
-                    <p>a day ago</p>
-                    <h3>Jaci Mun</h3>
-                    <p>#Excel #Financial #Functions #Test</p>
+                    <img src="brian.jpg" alt="Brian" width="50" class="img-circle">
+                    <p class="time">a day ago</p>
+                    <h3>Microsoft</h3>
+                    <p>At KEXP, their audience is as important as the music. Watch how they're breaking down the wall between listener and performer with Microsoft Kinect.</p>
                     <p>Read More</p>
                 </div>
             </div>
@@ -182,7 +201,14 @@
                     <li><a href="#">Contacts</a></li>
                     <li><a href="#">Reservation</a></li>
                 </ul>
-                <p>(c) Copyright 2016 Astoria Palawan</p>
+                    <div class="icon-circle"><i class="fa fa-facebook"></i></div>
+                    <div class="icon-circle"><i class="fa fa-twitter"></i></div>
+                    <div class="icon-circle"><i class="fa fa-google-plus"></i></div>
+                    <div class="icon-circle"><i class="fa fa-instagram"></i></div>
+                <p>
+                    <i class="fa fa-copyright"></i>
+                    Copyright 2016 Astoria Palawan
+                </p>
             </nav>
         </div>
     </footer>
